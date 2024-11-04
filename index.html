@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termómetro de Temperatura y Humedad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/icono.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/index.html">
+                <h1 class="logo"><strong class="uno-stilo">UNO</strong> Termómetro</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html">Acerca de</a></li>
+                <li><a href="/index.html">Componentes</a></li>
+                <li><a href="/index.html">Resultados</a></li>
+                <li><a href="/index.html">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article id="home">
+            <h1 class="tittle">TERMÓMETRO DE TEMPERATURA Y HUMEDAD</h1>
+            <p class="parrafo-intro">
+                ¡Bienvenido a la documentación de nuestro innovador proyecto de monitoreo ambiental! Este sistema
+                utiliza un Arduino UNO, un sensor DHT22 y una pantalla LCD con I2C para medir y mostrar en tiempo real
+                los niveles de temperatura y humedad del ambiente.
+                <br><br>
+                Diseñado especialmente para aplicaciones en invernaderos y gallineros, este proyecto tiene como objetivo
+                asegurar condiciones óptimas que promuevan el bienestar de las gallinas y optimicen la producción de
+                huevos. A través de un diseño accesible y funcional, los cuidadores pueden supervisar el ambiente de
+                manera eficiente, tomando decisiones informadas para garantizar un entorno saludable y productivo.
+                <br><br>
+                Explora esta documentación para conocer más sobre los componentes utilizados, la funcionalidad del
+                sistema y los resultados esperados. ¡Gracias por unirte a nosotros en este viaje hacia un mejor manejo
+                ambiental!
+            </p>
+        </article>
+
+        <section id="about">
+            <h2 class="tittle">Acerca del Proyecto</h2>
+            <div class="content-wrapper">
+                <p class="parrafo-intro2">
+                    Este proyecto tiene como objetivo desarrollar un termómetro de temperatura y humedad utilizando
+                    tecnología de Arduino, específicamente un Arduino UNO, un sensor DHT22 y una pantalla LCD con I2C.
+                    La idea es crear un sistema accesible y eficiente que permita medir y mostrar en tiempo real los
+                    niveles de temperatura y humedad en diversos entornos, como invernaderos y gallineros.
+                    <br><br>
+                    El sensor DHT22 proporciona mediciones precisas, que se visualizan de manera clara y concisa en la
+                    pantalla LCD, facilitando el monitoreo continuo de las condiciones ambientales. Esto es crucial para
+                    asegurar un ambiente óptimo para el bienestar de las gallinas, influyendo positivamente en su salud
+                    y producción de huevos.
+                    <br><br>
+                    Además, el sistema está diseñado para ser escalable, permitiendo la integración de alertas visuales
+                    y sonoras en caso de que las condiciones superen rangos críticos. De esta manera, los cuidadores
+                    pueden tomar decisiones informadas y realizar ajustes en el entorno de forma proactiva.
+                    <br><br>
+                    Este proyecto no solo destaca la importancia del uso de tecnología en la agricultura y la cría de
+                    animales, sino que también sirve como una excelente oportunidad de aprendizaje práctico en el ámbito
+                    de la electrónica y la programación.
+                </p>
+                <div class="carousel">
+                    <img src="/assets/proyecto.jpeg" alt="Proyecto 1" class="active">
+                    <img src="/assets/pantalla.jpeg" alt="Proyecto 2">
+                    <div class="carousel-buttons">
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="components">
+            <h2>Componentes Utilizados</h2>
+            <div class="content-wrapper">
+                <ul>
+                    <li>Arduino UNO</li>
+                    <li>Sensor DHT22</li>
+                    <li>Pantalla LCD con I2C</li>
+                    <li>Cables de conexión</li>
+                </ul>
+                <div class="gallery">
+                    <img src="/assets/arduino.png" alt="Componente 1">
+                    <img src="/assets/pantalla-lcd.png" alt="Componente 2">
+                    <img src="/assets/sensor.jpeg" alt="Componente 3">
+                    <img src="/assets/cables.png" alt="Componente 4">
+                </div>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Resultados Esperados</h2>
+            <p>Visualiza en tiempo real la temperatura y la humedad, lo que permite realizar ajustes en el ambiente para
+                mejorar el bienestar animal.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MiProyecto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
